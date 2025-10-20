@@ -4734,7 +4734,7 @@ code {
   transform: scale(1.2);
 }
 .rs-brand-one .rs-brand-thumb img {
-  width: 90px;
+  width: 200px;
   transition: all 0.5s ease;
 }
 .rs-brand-one.has-theme-blue .rs-section-subtitle {
