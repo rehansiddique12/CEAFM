@@ -1343,7 +1343,7 @@ textarea:focus {
   background: linear-gradient(to right,var(--blue-color), var(--light-blue-color));
 }
 .rs-btn.has-theme-yellow.has-bg {
-  background: var(--rs-theme-yellow);
+  background: linear-gradient(to right, var(--light-blue-color), var(--blue-color));
   color: var(--rs-black);
 }
 .rs-btn.has-theme-yellow.has-bg::before {
@@ -3301,10 +3301,7 @@ input[type=checkbox] ~ label:hover {
   background: #507a7c;
 }
 .backtotop-wrap.has-theme-yellow {
-  background: var(--rs-theme-yellow);
-}
-.backtotop-wrap.has-theme-yellow::after {
-  color: var(--rs-black);
+  background: linear-gradient(to right, var(--light-blue-color), var(--blue-color));
 }
 .backtotop-wrap.has-theme-deep-blue {
   background: var(--rs-theme-deep-blue);
@@ -11067,7 +11064,7 @@ html.lenis body {
 }
 .rs-footer-two .rs-footer-widget-title {
   color: var(--rs-white);
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 .rs-footer-two .rs-footer-widget-meta p {
   color: var(--rs-text-secondary);
