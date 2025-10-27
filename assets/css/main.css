@@ -272,6 +272,97 @@ i[class^=icon-] {
   --bs-gutter-x: 3rem;
 }
 
+/* whatsapp CSS */
+
+/* whatsapp icon CSS:  */
+.toggle-button {
+  width: 50px;
+  height: 50px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg")
+    no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.toggle-button.cross {
+  background: url("https://img.icons8.com/ios-filled/50/ffffff/xbox-x.png")
+    no-repeat center;
+  background-size: contain;
+  background-color: #075e54;
+  border-radius: 50%;
+}
+
+.chat-container {
+  display: none;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 165px;
+  left: 20px;
+  z-index: 999;
+}
+
+.chat-container.active {
+  display: block;
+}
+
+.header {
+  background-color: #075e54;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.chat-messages {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 5px;
+  color: green;
+  background-color: #e1ffc7;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-btn {
+  background-color: #075e54;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
 @media (min-width: 1441px) {
   .container,
   .container-lg,
@@ -4734,7 +4825,7 @@ code {
   transform: scale(1.2);
 }
 .rs-brand-one .rs-brand-thumb img {
-  width: 200px;
+  width: 200Tpx;
   transition: all 0.5s ease;
 }
 .rs-brand-one.has-theme-blue .rs-section-subtitle {
@@ -5166,30 +5257,7 @@ html.lenis body {
   pointer-events: none;
 }
 
-/*----------------------------------------*/
-/*  2.2 cursor
-/*----------------------------------------*/
-.rs-theme-settings-area {
-  position: fixed;
-  top: 50%;
-  right: 0px;
-  width: 240px;
-  background-color: var(--rs-white);
-  transform: translateY(-50%) translateX(100%);
-  z-index: 991;
-  border-bottom-right-radius: 4px;
-  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.1);
-  transition: all 0.4s 0s ease-out;
-}
-.rs-theme-settings-area.settings-opened {
-  transform: translateY(-50%) translateX(0%);
-}
-.rs-theme-settings-area.settings-opened .rs-theme-settings-gear {
-  opacity: 0;
-}
-.rs-theme-settings-area.settings-opened .rs-theme-settings-close {
-  opacity: 1;
-}
+
 .rs-theme-settings-open {
   position: absolute;
   top: -1px;
