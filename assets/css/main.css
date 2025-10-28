@@ -20802,7 +20802,7 @@ html.lenis body {
   border-color: var(--rs-theme-orange);
 }
 .rs-contact-ten .rs-contact-btn .rs-btn:hover {
-  background: rgb(255, 92, 0);
+  background: linear-gradient(to right, var(--light-blue-color), var(--blue-color));
 }
 
 .rs-map-one {
