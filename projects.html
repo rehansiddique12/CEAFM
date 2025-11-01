@@ -87,29 +87,29 @@
                     </ul>
                   </li>
                   <!-- page menu -->
-                  <li class="menu-item-has-children">
-                    <a href="">Products</a>
+                 <li class="menu-item-has-children">
+                    <a href="products.html"> Products </a>
                     <ul class="submenu last-children">
                       <li>
-                        <a href="">Anodizing Plant</a>
+                        <a href="products.html"> Anodizing Plant</a>
                       </li>
                       <li>
-                        <a href="">Powder Coating Plant</a>
+                        <a href="powdercoating.html"> Powder Coating Plant </a>
                       </li>
                       <li>
-                        <a href="">Optical Emission Spectrometer</a>
+                        <a href="opticalemission.html"> Optical Emission Spectrometer </a>
                       </li>
                       <li>
-                        <a href="">Architectural products</a>
+                        <a href="architecturalproducts.html"> Architectural products </a>
                       </li>
                       <li>
-                        <a href=""> Industrial Products</a>
+                        <a href="industrialproducts.html"> Industrial Products </a>
                       </li>
                       <li>
-                        <a href="">Structure Profile</a>
+                        <a href="structureprofile.html"> Structure Profile </a>
                       </li>
                       <li>
-                        <a href="">Aluminium Extrusion.</a>
+                        <a href="extrusion.html"> Aluminium Extrusion. </a>
                       </li>
                     </ul>
                   </li>
@@ -641,25 +641,25 @@
                     <div class="rs-footer-widget-content">
                       <div class="rs-footer-widget-meta">
                         <div class="rs-footer-widget-address">
-                          <a href="index.html">Anodizing Plant</a>
+                          <a href="products.html">Anodizing Plant</a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="about.html">Powder Coating Plant</a>
+                          <a href="powdercoating.html">Powder Coating Plant</a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html">Optical Emission Spectrometer</a>
+                          <a href="opticalemission.html">Optical Emission Spectrometer</a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html">Architectural products</a>
+                          <a href="architecturalproducts.html">Architectural products</a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html"> Industrial Products</a>
+                          <a href="industrialproducts.html"> Industrial Products</a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html">Structure Profile</a>
+                          <a href="structureprofile.html">Structure Profile</a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html">Aluminium Extrusion.</a>
+                          <a href="extrusion.html">Aluminium Extrusion.</a>
                         </div>
                       </div>
                     </div>
@@ -766,6 +766,63 @@
       </svg>
     </div>
     <!-- Backtotop end -->
+       <button class="toggle-button" onclick="toggleChat()"></button>
+    <div class="chat-container" id="chatContainer">
+      <div class="header">Uram Shahzad Transports</div>
+      <div class="chat-messages">
+        <div class="message">Hi there</div>
+        <div class="message">How can we help you?</div>
+      </div>
+      <div class="input-container">
+        <input id="chatInput" placeholder="Type a message..." type="text" />
+        <button class="send-btn" id="sendBtn">
+          <svg
+            fill="white"
+            height="22px"
+            viewbox="0 0 24 24"
+            width="22px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 21l21-9L2 3v7l15 2-15 2z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script>
+      function toggleChat() {
+        const button = document.querySelector(".toggle-button");
+        const chat = document.getElementById("chatContainer");
+        chat.classList.toggle("active");
+        button.classList.toggle("cross");
+      }
+    
+      function toggleChat() {
+        const chatContainer = document.getElementById("chatContainer");
+        const toggleButton = document.querySelector(".toggle-button");
+        chatContainer.classList.toggle("active");
+        toggleButton.classList.toggle("cross");
+      }
+
+      // WhatsApp sending logic
+      const phoneNumber = "9203004741675"; // no +
+      const chatInput = document.getElementById("chatInput");
+      const sendBtn = document.getElementById("sendBtn");
+
+      function sendMessage() {
+        const message = encodeURIComponent(chatInput.value.trim() || "Hello!");
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+        window.open(whatsappURL, "_blank");
+        chatInput.value = "";
+      }
+
+      sendBtn.addEventListener("click", sendMessage);
+
+      chatInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          sendMessage();
+        }
+      });
+    </script>
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>

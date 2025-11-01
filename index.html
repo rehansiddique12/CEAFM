@@ -80,28 +80,28 @@
                   </li>
                   <!-- page menu -->
                   <li class="menu-item-has-children">
-                    <a href=""> Products </a>
+                    <a href="products.html"> Products </a>
                     <ul class="submenu last-children">
                       <li>
-                        <a href=""> Anodizing Plant </a>
+                        <a href="products.html"> Anodizing Plant</a>
                       </li>
                       <li>
-                        <a href=""> Powder Coating Plant </a>
+                        <a href="powdercoating.html"> Powder Coating Plant </a>
                       </li>
                       <li>
-                        <a href=""> Optical Emission Spectrometer </a>
+                        <a href="opticalemission.html"> Optical Emission Spectrometer </a>
                       </li>
                       <li>
-                        <a href=""> Architectural products </a>
+                        <a href="architecturalproducts.html"> Architectural products </a>
                       </li>
                       <li>
-                        <a href=""> Industrial Products </a>
+                        <a href="industrialproducts.html"> Industrial Products </a>
                       </li>
                       <li>
-                        <a href=""> Structure Profile </a>
+                        <a href="structureprofile.html"> Structure Profile </a>
                       </li>
                       <li>
-                        <a href=""> Aluminium Extrusion. </a>
+                        <a href="extrusion.html"> Aluminium Extrusion. </a>
                       </li>
                     </ul>
                   </li>
@@ -399,6 +399,7 @@
     <div class="offcanvas-overlay"></div>
     <div class="offcanvas-overlay-white"></div>
     <!-- Offcanvas area start -->
+
     <!-- Body main wrapper start -->
     <main>
       <!-- banner area start -->
@@ -2563,7 +2564,7 @@
         </div>
       </div>
       <!-- subscribe area end -->
-      <!-- Body main wrapper end -->
+
       <!-- footer area start -->
       <footer>
         <div class="rs-footer-area rs-footer-two has-theme-yellow">
@@ -2599,27 +2600,27 @@
                     <div class="rs-footer-widget-content">
                       <div class="rs-footer-widget-meta">
                         <div class="rs-footer-widget-address">
-                          <a href="index.html"> Anodizing Plant </a>
+                          <a href="products.html"> Anodizing Plant </a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html"> Powder Coating Plant </a>
+                          <a href="powdercoating.html"> Powder Coating Plant </a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html">
+                          <a href="opticalemission.html">
                             Optical Emission Spectrometer
                           </a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html"> Architectural products </a>
+                          <a href="architecturalproducts.html"> Architectural products </a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html"> Industrial Products </a>
+                          <a href="industrialproducts.html"> Industrial Products </a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html"> Structure Profile </a>
+                          <a href="structureprofile.html"> Structure Profile </a>
                         </div>
                         <div class="rs-footer-widget-address">
-                          <a href="index.html"> Aluminium Extrusion. </a>
+                          <a href="extrusion.html"> Aluminium Extrusion. </a>
                         </div>
                       </div>
                     </div>
@@ -2715,7 +2716,21 @@
       </footer>
       <!-- footer area end -->
     </div>
-    <button class="toggle-button" onclick="toggleChat()"></button>
+    
+    <!-- back to top -->
+    <!-- Backtotop start -->
+    <div class="backtotop-wrap cursor-pointer has-theme-yellow">
+      <svg
+        class="backtotop-circle svg-content"
+        height="100%"
+        viewbox="-1 -1 102 102"
+        width="100%"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+      </svg>
+    </div>
+    <!-- Backtotop end -->
+     <button class="toggle-button" onclick="toggleChat()"></button>
     <div class="chat-container" id="chatContainer">
       <div class="header">Uram Shahzad Transports</div>
       <div class="chat-messages">
@@ -2737,19 +2752,6 @@
         </button>
       </div>
     </div>
-    <!-- back to top -->
-    <!-- Backtotop start -->
-    <div class="backtotop-wrap cursor-pointer has-theme-yellow">
-      <svg
-        class="backtotop-circle svg-content"
-        height="100%"
-        viewbox="-1 -1 102 102"
-        width="100%"
-      >
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-      </svg>
-    </div>
-    <!-- Backtotop end -->
     <script>
       function toggleChat() {
         const button = document.querySelector(".toggle-button");
@@ -2757,8 +2759,7 @@
         chat.classList.toggle("active");
         button.classList.toggle("cross");
       }
-    </script>
-    <script>
+    
       function toggleChat() {
         const chatContainer = document.getElementById("chatContainer");
         const toggleButton = document.querySelector(".toggle-button");
