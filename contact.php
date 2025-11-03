@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 // Fixed recipient
 define("RECIPIENT_NAME", "Mehar Imran");
-define("RECIPIENT_EMAIL", "Cityenterprises533@gmail.com");
+define("RECIPIENT_EMAIL", "cityenterprises533@gmail.com");
 
 // Helper: prevent header injection
 function sanitize_header($value) {
