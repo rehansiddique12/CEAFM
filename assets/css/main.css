@@ -568,6 +568,9 @@ i[class^=icon-] {
 /*----------------------------------------
    Text Underline
 -----------------------------------------*/
+.hovericon:hover {
+      color: var(--rs-theme-orange);
+}
 .underline a {
   display: inline;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, currentColor), to(currentColor));
