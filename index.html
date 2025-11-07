@@ -52,12 +52,11 @@
             >
               <div class="rs-header-logo-wrapper">
                 <div class="rs-header-logo">
-                  <!-- <div class="rs-header-logo-bg"></div> -->
                   <a href="index.html">
                     <img
                       alt="logo"
                       src="assets/images/main/logo.png"
-                      style="margin-left: 100px"
+                      style="margin-left: 50px"
                     />
                   </a>
                 </div>
@@ -107,7 +106,7 @@
                         <a href="structureprofile.html"> Structure Profile </a>
                       </li>
                       <li>
-                        <a href="extrusion.html"> Aluminium Extrusion. </a>
+                        <a href="extrusion.html"> Aluminium Extrusion. </a>
                       </li>
                     </ul>
                   </li>
@@ -150,14 +149,25 @@
                   <li class="">
                     <a href="projects.html"> Projects </a>
                   </li>
+
+                  <!-- Mobile Only Contact Button -->
+                  <li class="mobile-contact-item" style="width: 200px">
+                    <a
+                      href="contact.html"
+                      class="mobile-contact-link"
+                      style="color: white; padding-left: 100px"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
                 </ul>
               </nav>
             </div>
             <div class="rs-header-right">
-              <div class="rs-theme-social has-transparent has-orange">
-                <a href="#">
-                  <i class="ri-twitter-x-line"> </i>
-                </a>
+              <!-- Hide social icons on mobile -->
+              <div
+                class="rs-theme-social has-transparent has-orange desktop-only d-flex"
+              >
                 <a href="#">
                   <i class="ri-facebook-fill"> </i>
                 </a>
@@ -168,7 +178,8 @@
                   <i class="ri-instagram-line"> </i>
                 </a>
               </div>
-              <div class="">
+              <!-- Hide contact button on mobile -->
+              <div class="desktop-only">
                 <a
                   class="rs-btn has-theme-yellow has-icon"
                   href="contact.html"
@@ -2625,22 +2636,22 @@
         <div class="col-xl-12">
           <div
             class="swiper"
-                  data-autoplay="true"
-                  data-clone-slides="false"
-                  data-delay="1500"
-                  data-dots-dynamic="false"
-                  data-effect="false"
-                  data-hover-pause="true"
-                  data-item="6"
-                  data-item-lg="4"
-                  data-item-md="3"
-                  data-item-mobile="1"
-                  data-item-sm="1"
-                  data-item-xl="2"
-                  data-item-xs="1"
-                  data-loop="true"
-                  data-margin="30"
-                  data-speed="2000"
+            data-autoplay="true"
+            data-clone-slides="false"
+            data-delay="1500"
+            data-dots-dynamic="false"
+            data-effect="false"
+            data-hover-pause="true"
+            data-item="6"
+            data-item-lg="4"
+            data-item-md="3"
+            data-item-mobile="1"
+            data-item-sm="1"
+            data-item-xl="2"
+            data-item-xs="1"
+            data-loop="true"
+            data-margin="30"
+            data-speed="2000"
           >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -2818,24 +2829,31 @@
                             </div>
                             <h5 class="rs-footer-widget-title">Follow Us</h5>
                             <div class="d-flex">
-                            <div>
-                              <a
-                                href=""
-                                style="
-                                  background-color: white;
-                                  padding: 10px;
-                                  border-radius: 10px;
-                                "
-                              >
-                                <i class="ri-facebook-fill hovericon" >
-                                </i>
-                              </a>
-                            </div>
-                            <div>
-                              <a href="" style="background-color: white; padding: 10px; border-radius: 10px;  margin-left: 10px;">
-                                <i class="ri-instagram-line"></i>
-                              </a>
-                            </div>
+                              <div>
+                                <a
+                                  href=""
+                                  style="
+                                    background-color: white;
+                                    padding: 10px;
+                                    border-radius: 10px;
+                                  "
+                                >
+                                  <i class="ri-facebook-fill hovericon"> </i>
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href=""
+                                  style="
+                                    background-color: white;
+                                    padding: 10px;
+                                    border-radius: 10px;
+                                    margin-left: 10px;
+                                  "
+                                >
+                                  <i class="ri-instagram-line"></i>
+                                </a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -2843,16 +2861,22 @@
                     </div>
                   </div>
                 </div>
-                <style>
-                  
-                </style>
+                <style></style>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
                   <div class="rs-footer-widget footer-2-col-4">
                     <h5 class="rs-footer-widget-title">Location</h5>
                     <div class="rs-footer-widget-content">
                       <div class="rs-footer-widget-contact-info">
                         <div class="rs-footer-widget-number">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6805.505934215961!2d74.225811!3d31.475981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903563bbc950f%3A0xb3eda9549968743e!2sCity%20Counter!5e0!3m2!1sen!2sus!4v1762194957538!5m2!1sen!2sus" width="250" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6805.505934215961!2d74.225811!3d31.475981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903563bbc950f%3A0xb3eda9549968743e!2sCity%20Counter!5e0!3m2!1sen!2sus!4v1762194957538!5m2!1sen!2sus"
+                            width="250"
+                            height="350"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
                         </div>
                       </div>
                     </div>

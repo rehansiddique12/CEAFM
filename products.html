@@ -61,12 +61,11 @@
             >
               <div class="rs-header-logo-wrapper">
                 <div class="rs-header-logo">
-                  <!-- <div class="rs-header-logo-bg"></div> -->
                   <a href="index.html">
                     <img
                       alt="logo"
                       src="assets/images/main/logo.png"
-                      style="margin-left: 100px"
+                      style="margin-left: 50px"
                     />
                   </a>
                 </div>
@@ -98,19 +97,25 @@
                         <a href="powdercoating.html"> Powder Coating Plant </a>
                       </li>
                       <li>
-                        <a href="opticalemission.html"> Optical Emission Spectrometer </a>
+                        <a href="opticalemission.html">
+                          Optical Emission Spectrometer
+                        </a>
                       </li>
                       <li>
-                        <a href="architecturalproducts.html"> Architectural products </a>
+                        <a href="architecturalproducts.html">
+                          Architectural products
+                        </a>
                       </li>
                       <li>
-                        <a href="industrialproducts.html"> Industrial Products </a>
+                        <a href="industrialproducts.html">
+                          Industrial Products
+                        </a>
                       </li>
                       <li>
                         <a href="structureprofile.html"> Structure Profile </a>
                       </li>
                       <li>
-                        <a href="extrusion.html"> Aluminium Extrusion. </a>
+                        <a href="extrusion.html"> Aluminium Extrusion. </a>
                       </li>
                     </ul>
                   </li>
@@ -153,14 +158,25 @@
                   <li class="">
                     <a href="projects.html"> Projects </a>
                   </li>
+
+                  <!-- Mobile Only Contact Button -->
+                  <li class="mobile-contact-item" style="width: 200px">
+                    <a
+                      href="contact.html"
+                      class="mobile-contact-link"
+                      style="color: white; padding-left: 100px"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
                 </ul>
               </nav>
             </div>
             <div class="rs-header-right">
-              <div class="rs-theme-social has-transparent has-orange">
-                <a href="#">
-                  <i class="ri-twitter-x-line"> </i>
-                </a>
+              <!-- Hide social icons on mobile -->
+              <div
+                class="rs-theme-social has-transparent has-orange desktop-only d-flex"
+              >
                 <a href="#">
                   <i class="ri-facebook-fill"> </i>
                 </a>
@@ -171,7 +187,8 @@
                   <i class="ri-instagram-line"> </i>
                 </a>
               </div>
-              <div class="">
+              <!-- Hide contact button on mobile -->
+              <div class="desktop-only">
                 <a
                   class="rs-btn has-theme-yellow has-icon"
                   href="contact.html"

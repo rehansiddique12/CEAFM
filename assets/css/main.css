@@ -5745,6 +5745,11 @@ html.lenis body {
     gap: 20px;
   }
 }
+@media (max-width: 768px) {
+  .rs-theme-social {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .rs-header-one .rs-header-right {
     gap: 30px;
@@ -6078,6 +6083,13 @@ html.lenis body {
     width: 210px;
   }
 }
+/* Logo margin responsive fix */
+@media (max-width: 768px) {
+  .rs-header-logo img {
+    margin-left: 20px !important;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   .rs-header-four .rs-header-logo-wrapper {
     width: 100%;
@@ -6085,6 +6097,37 @@ html.lenis body {
     height: 70px;
     justify-content: start;
   }
+}
+/* Hide on mobile, show on desktop */
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* Show Contact Us in mobile menu only */
+.mobile-contact-item {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .mobile-contact-item {
+    display: none;
+  }
+}
+
+.mobile-contact-link {
+  display: block;
+  padding: 10px 15px;
+  background: linear-gradient(to right, var(--light-blue-color), var(--blue-color));
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
 }
 .rs-header-four .rs-header-left .rs-theme-social {
   padding-inline-start: 75px;
