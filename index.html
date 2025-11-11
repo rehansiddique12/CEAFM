@@ -2926,6 +2926,45 @@
       </svg>
     </div>
     <!-- Backtotop end -->
+    <button
+      id="qrBtn"
+      onclick="toggleQR()"
+      style="
+        cursor: pointer;
+        position: fixed;
+        bottom: 150px;
+        left: 25px;
+        z-index: 1000;
+        background: #fff;
+        border: 2px solid #1a3864;
+        color: #1a3864;
+        padding: 18px 18px;
+        cursor: pointer;
+        border-radius: 120px;
+        font-weight: 800;
+      "
+    >
+      QR
+    </button>
+
+    <div
+      id="qrContainer"
+      style="
+        text-align: center;
+        position: fixed;
+        bottom: 210px;
+        left: 60px;
+        z-index: 1000;
+        background: white;
+        width: 200px;
+        margin: 10px auto;
+        border-radius: 200px 0px;
+        
+      "
+    >
+      <img src="assets/images/main/QR.png" style="border-radius: 20px;" alt="" />
+    </div>
+
     <button class="toggle-button" onclick="toggleChat()"></button>
     <div class="chat-container" id="chatContainer">
       <div class="header">Uram Shahzad Transports</div>
@@ -2962,6 +3001,19 @@
         chatContainer.classList.toggle("active");
         toggleButton.classList.toggle("cross");
       }
+      function toggleQR() {
+        const button = document.querySelector(".toggle-button");
+        const chat = document.getElementById("chatContainer");
+        chat.classList.toggle("active");
+        button.classList.toggle("cross");
+      }
+
+      function toggleQR() {
+        const chatContainer = document.getElementById("chatContainer");
+        const toggleButton = document.querySelector(".toggle-button");
+        chatContainer.classList.toggle("active");
+        toggleButton.classList.toggle("cross");
+      }
 
       // WhatsApp sending logic
       const phoneNumber = "923004741645"; // no +
@@ -2980,6 +3032,33 @@
       chatInput.addEventListener("keypress", function (e) {
         if (e.key === "Enter") {
           sendMessage();
+        }
+      });
+    </script>
+
+    <script>
+      function toggleQR() {
+        const qrContainer = document.getElementById("qrContainer");
+        if (
+          qrContainer.style.display === "none" ||
+          qrContainer.style.display === ""
+        ) {
+          qrContainer.style.display = "block";
+        } else {
+          qrContainer.style.display = "none";
+        }
+      }
+
+      // Optional: Close QR when clicking outside
+      document.addEventListener("click", function (event) {
+        const qrContainer = document.getElementById("qrContainer");
+        const qrBtn = document.getElementById("qrBtn");
+
+        if (
+          !qrContainer.contains(event.target) &&
+          !qrBtn.contains(event.target)
+        ) {
+          qrContainer.style.display = "none";
         }
       });
     </script>

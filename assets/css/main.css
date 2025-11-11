@@ -273,8 +273,22 @@ i[class^=icon-] {
   --bs-gutter-x: 3rem;
 }
 
-/* whatsapp CSS */
+/* QR Code */
+#qrContainer {
+  display: none;
+  transition: 0.4s ease;
+}
 
+#qrContainer.active {
+  display: block;
+}
+
+#qrBtn.cross {
+  background: #1a3864;
+  color: #fff;
+}
+
+/* whatsapp CSS */
 /* whatsapp icon CSS:  */
 .toggle-button {
   width: 70px;
@@ -302,12 +316,12 @@ i[class^=icon-] {
   display: none;
   width: 300px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 10px 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: fixed;
-  bottom: 165px;
-  left: 20px;
-  z-index: 999;
+  bottom: 155px;
+  left: 50px;
+  z-index: 2000;
 }
 
 .chat-container.active {
